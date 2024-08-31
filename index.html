@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <div class="header navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand mb-0 h1 d-flex align-items-center" href="#">
+                <img src="./access/logo/logoPage.jpg" alt="logo"
+                    class="d-inline-block align-top" height="50" width="50">
+                TechZone</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" Features>
+                            Category
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <li><a href="./html/computers.html"
+                                    class="dropdown-item">Computers</a></li>
+                            <li><a href="./html/components.html"
+                                    class="dropdown-item">Components</a></li>
+                            <li><a href="./html/peripherals.html"
+                                    class="dropdown-item">Peripherals</a></li>
+                            <li><a href="./html/accessories.html"
+                                    class="dropdown-item">Accessories</a></li>
+                            <li><a href="./html/other.html"
+                                    class="dropdown-item">Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link ">
+                            News
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="input-group w-50">
+                    <input type="text" class="form-control"
+                        placeholder="Search">
+                    <button class="btn bg-primary" type="button">
+                        <i class="bi bi-search-heart" style="color: white;"></i>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item active align-items-center d-flex">
+                            <a href="#" class="nav-link text-center">
+                                <i class="bi bi-headset"></i>
+                                Hotline <br>
+                                1900000
+                            </a>
+                        </li>
+                        <li class="nav-item active align-items-center d-flex">
+                            <a href="#" class="nav-link text-center">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Show room<br>
+                                Location
+                            </a>
+                        </li>
+                        <li class="nav-item active align-items-center d-flex">
+                            <button type="button" class="btn btn-outline-none"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+
+                                <i class="bi bi-bag-fill"></i>
+                                <span class="badge bg-primary">0</span>
+                                <br>
+                                Cart
+                            </button>
+                        </li>
+                        <li class="nav-item active align-items-center d-flex">
+                            <a href="#" class="nav-link text-center">
+                                <i class="bi bi-person-fill"></i>
+                                <br>
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="top">
+            <p><b>TechZone: Building the perfect PC, one component at a time.
+                </b></p>
+        </div>
+        <section>
+            <div class="category">
+                <div class="category-item">
+                    <a href>
+                        <img src="./access/category/pc-gaming.png" alt
+                            width="200px">
+                        <p class="text-center">COMPUTERS</p>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href>
+                        <img src="./access/category/acessories.png" alt
+                            width="200px">
+                        <p class="text-center">COMPONENTS</p>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href>
+                        <img src="./access/category/components.png" alt
+                            width="200px">
+                        <p class="text-center">PERIPHERALS</p>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href>
+                        <img src="./access/category/othes.png" alt
+                            width="200px">
+                        <p class="text-center">ACCESSORIES</p>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href>
+                        <img src="./access/category/CAMERA.png" alt
+                            width="200px">
+                        <p class="text-center">OTHERS</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="container text-center">
+            <h2 class="bg-dark text-white">FLASH SALE</h2>
+            <div class="flash-sale">
+                <div class="flash-sale_item">
+                    <span>-50%</span>
+                    <img src="./access/category/components/1.webp"
+                        class="card-img-top" alt="SteelSeries Rival 5">
+                    <div class="card-body">
+                        <p class="card-text">SteelSeries Rival 1</p>
+                        <p class="card-text">1,200,000₫ <del>-600,000đ</del></p>
+                    </div>
+                </div>
+                <div class="flash-sale_item">
+                    <span>-50%</span>
+                    <img src="./access/category/components/5.webp"
+                        class="card-img-top" alt="SteelSeries Rival 5">
+                    <div class="card-body">
+                        <p class="card-text">SteelSeries Rival 3</p>
+                        <p class="card-text">1,800,000₫ <del>-900,000đ</del></p>
+                    </div>
+                </div>
+                <div class="flash-sale_item">
+                    <span>-50%</span>
+                    <img src="./access/category/components/4.webp"
+                        class="card-img-top" alt="SteelSeries Rival 5">
+                    <div class="card-body">
+                        <p class="card-text">SteelSeries Rival 2</p>
+                        <p class="card-text">1,500,000₫ <del>-750,000đ</del></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="bg-dark text-white text-center">GAMMING GEAR</h2>
+        </section>
+        <section class="container">
+            <h2 class="bg-dark text-white text-center">KEYBOARD</h2>
+        </section>
+        <section class="container">
+            <h2 class="bg-dark text-white text-center">MOUSE</h2>
+        </section>
+
+        <div class="brand">
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="./access/logo/corsair-01.jpg" alt="Gigabyte"
+                    >
+            </a>
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="./access/logo/msi-01 (1).jpg" alt="Gigabyte"
+                    >
+            </a>
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="./access/logo/cool-01-01.jpg" alt="Gigabyte"
+                    >
+            </a>
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="./access/logo/lg-01.jpg" alt="Gigabyte" >
+            </a>
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="./access/logo/asus-01.jpg" alt="ASUS" >
+            </a>
+
+        </div>
+        <div class="footer">
+            <div class="logo_end"><img src="./access/logo/logoPage.jpg" alt
+                    width="50px"></div>
+            <div class="subscribe_title">
+
+            </div>
+            <div class="subscribe">
+                <div class="search">
+                    <input type="text" placeholder="Input yor email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Send">
+            </div>
+            <div class="footer-list">
+                <div class="footer-list_link">
+                    <p><b>Category</b></p>
+                    <ul>
+                        <li>Computers</li>
+                        <li>Accessories</li>
+                        <li>Peripherals</li>
+                        <li>Components</li>
+                        <li>Others</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>Policy</b></p>
+                    <ul>
+                        <li>Warranty policy</li>
+                        <li>Payment policy</li>
+                        <li>Delivery policy</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>Conpany</b></p>
+                    <ul>
+                        <li>About us </li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>News</b></p>
+                    <ul>
+                        <li>Personal</li>
+                        <li>Start up</li>
+                        <li>Organization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-end">
+                <select name id value="1">
+                    <option value="1">English</option>
+                    <option value="2">Vietnamese</option>
+                </select>
+                <div class="end_center text-center">
+                    <p>@ 2024 TechZone,Inc  • Privacy • Terms • Sitemap</p>
+                </div>
+                <div class="icon_link">
+                    <a href="#" style="color: rgb(85, 192, 245)"> <i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="color: blue"> <i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="color: rgb(83, 83, 187)"> <i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="color: red"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
