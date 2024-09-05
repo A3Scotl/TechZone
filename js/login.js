@@ -18,6 +18,9 @@ function login(e) {
     var password = document.getElementById("password").value;
     var users = localStorage.getItem("users");
     var rexname  = '/^[a-zA-Z0-9]{6,32}+$/';
+    if(users==null){
+        alert("Please register");
+    }
     if ( email == "" || password == "")
         alert("Please enter complete information!!!");
     var data = JSON.parse(users);

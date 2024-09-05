@@ -89,6 +89,114 @@
 .brand img{
     width: 100%;
 }
+/* cart */
+.cartTab{
+    width: 600px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -600px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 2;
+}
+body.showCart .cartTab{
+    right: 0;
+    color: #171717;
+    /* filter: drop-shadow(0 500px 400px black); */
+    box-shadow: 5px 100px 1000px 1800px rgba(0,0,0,0.75);
+}
+body.showCart .container{
+    pointer-events: none;
+}
+body.showCart .header{
+    pointer-events: none;
+}
+.cartTab-title{
+    height: 85px;
+    margin: 0;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #171717;;
+    font-weight: bold;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+  
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 0%;
+    color: black;
+    background-color: white;
+    border-top: 1px solid #605f60;
+    
+}
+.cartTab .close{
+   
+}
+.listCart .item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 150px 150px 100px 100fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+   
+    
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+}
+.listCart .quantity span:active{
+    background-color: black;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color:  black;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+.close:hover {
+    background-color: #3333f5;
+    color: white;
+   
+}
+.checkOut:hover{
+    background-color: #3333f5;
+    color: white;
+   
+}
 /* */
 .footer{
     width: 100%;

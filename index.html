@@ -18,6 +18,7 @@
             rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="./js/app.js"></script>
         <title>Home</title>
     </head>
 
@@ -67,7 +68,7 @@
                     </li>
                 </ul>
 
-                <div class="input-group" style="width: 40%;">
+                <div class="input-group search-bar" style="width: 50%;">
                     <input type="text" class="form-control"
                         placeholder="Search">
                     <button class="btn bg-primary" type="button">
@@ -91,12 +92,9 @@
                             </a>
                         </li>
                         <li class="nav-item active align-items-center d-flex">
-                            <button type="button" class="btn btn-outline-none"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-
+                            <button type="button" class="btn btn-outline-none icon-cart">
                                 <i class="bi bi-bag-fill"></i>
-                                <span class="badge bg-primary">0</span>
+                                <span class="bg-primary text-white" style="padding:3px; border-radius: 50%;">10</span>
                                 <br>
                                 Cart
                             </button>
@@ -111,6 +109,18 @@
 
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="cartTab">
+            <div class="cartTab-title">
+                <p>SHOPING CART</p>
+            </div>
+            <div class="listCart">
+                
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="checkOut" onclick="pay()">CHECK OUT</button>
             </div>
         </div>
         <div class="banner" id="top">
@@ -431,14 +441,4 @@
             </div>
         </div>
     </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-        var currentUser = localStorage.getItem("currentUser");
-        var usernameDisplay = document.querySelector(".username-display");
-        if (currentUser) {
-            usernameDisplay.innerHTML = `<p>Hello, ${currentUser}</p> <span class="logout">Logout</span>`;
-            const logoutSpan = usernameDisplay.nextElementSibling;          }
-        });
-        
-    </script>
 </html>
