@@ -54,7 +54,7 @@
     transform: scale(0.8);
     transition: 0.3s ease-in;
 }
-.flash-sale{
+.flash-sale,.gamming-gear,.keyboard,.mouse{
     width: 100%;
     display: grid;
     align-items: center;
@@ -63,8 +63,11 @@
     padding: 30px 10px;
     gap: 60px;
 }
-.flash-sale_item {
+.flash-sale_item,.gamming-gear_item,.keyboard_item,.mouse_item {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.username-display p{
+    margin: 0;
 }
 .flash-sale_item span{
     position: relative;
