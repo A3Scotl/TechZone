@@ -1,4 +1,6 @@
+//load username len web va open close cart
 document.addEventListener("DOMContentLoaded", function(){
+    //load username len web 
     var currentUser = localStorage.getItem("currentUser");
     var usernameDisplay = document.querySelector(".username-display");
     var search_bar = document.querySelector(".search-bar");
@@ -10,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     
     });
+    // open close cart
     document.addEventListener("DOMContentLoaded",function(){
         var iconCart = document.querySelector('.icon-cart');
         var iconCartSpan = document.querySelector('.icon-cart span');
