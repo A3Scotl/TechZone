@@ -24,4 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         closeCart.addEventListener('click', () => {
             body.classList.toggle('showCart');
         })
-    })
+    
+
+})
+

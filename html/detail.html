@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/detail.css">
         <script src="../js/bootstrap.min.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
@@ -15,6 +19,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <script src="../js/app.js"></script>
+        <script src="../js/detail.js"></script>
 
         <title>Details</title>
     </head>
@@ -120,6 +125,97 @@
             <div class="btn">
                 <button class="close">CLOSE</button>
                 <button class="checkOut" onclick="pay()">CHECK OUT</button>
+            </div>
+        </div>
+        <div class="ctn_product">
+            <div class="ctn_product_img">
+                
+            </div>
+            <div class="ctn_product_detail">
+                <div class="ctn_product_detail_name">
+                </div>
+                <div class="ctn_product_detail_price">
+                </div>
+                <div class="ctn_product_detail_btn">
+                    <a href="../html/components.html">Go shop now</a>
+                </div>
+                <div class="ctn_product_detail_key-features">
+                    <span>Key features</span>
+                    <div>
+                        <p>- Personalised sound (self-tuning EQ)</p>
+                        <p>- Active noise cancellation (ANC)</p>
+                    </div>
+                </div>
+                <div class="ctn_product_detail_bottom">
+                    <p>30-day returns, 12-month extended warranty.</p>
+                    <p>‍Have questions? Visit our <a href="#"><u>Support</u></a> for more info.</p>
+                    <div>
+                        <img src="../access/icon/cdn_gobal.svg" alt="">
+                        <img src="../access/icon/paypal.svg" alt="">
+                        <img src="../access/icon/visa.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo_end"><img src="../access/logo/logoPage.jpg" alt width="50px"></div>
+            <div class="subscribe">
+                <div class="search">
+                    <input type="text" placeholder="Input yor email">
+                    <i class="fa-regular fa-envelope text-black-50"></i>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Send">
+            </div>
+            <div class="footer-list">
+                <div class="footer-list_link">
+                    <p><b>Category</b></p>
+                    <ul>
+                        <li>Computers</li>
+                        <li>Accessories</li>
+                        <li>Peripherals</li>
+                        <li>Components</li>
+                        <li>Others</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>Policy</b></p>
+                    <ul>
+                        <li>Warranty policy</li>
+                        <li>Payment policy</li>
+                        <li>Delivery policy</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>Conpany</b></p>
+                    <ul>
+                        <li>About us </li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="footer-list_link">
+                    <p><b>News</b></p>
+                    <ul>
+                        <li>Personal</li>
+                        <li>Start up</li>
+                        <li>Organization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-end">
+                <select name id value="1">
+                    <option value="1">English</option>
+                    <option value="2">Vietnamese</option>
+                </select>
+                <div class="end_center text-center">
+                    <p>@ 2024 TechZone,Inc • Privacy • Terms • Sitemap</p>
+                </div>
+                <div class="icon_link">
+                    <a href="#" style="color: rgb(85, 192, 245)"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="color: blue"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="color: rgb(83, 83, 187)"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="color: red"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
         </div>
     </body>

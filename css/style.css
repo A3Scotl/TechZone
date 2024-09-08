@@ -217,7 +217,12 @@ body.showCart .header{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
     
+}
+.list-product .item:hover > img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 .list-product .item img{
     width: 180px;
@@ -257,8 +262,6 @@ body.showCart .header{
 }
 .addCart:hover,.detail:hover{
     opacity: 0.8;
-    transform: scaleX(0.9);
-    
 }
 /*end List-product*/
 /* footer*/
