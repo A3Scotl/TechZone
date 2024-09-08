@@ -1,63 +1,63 @@
 var products = [{
   "id": "ACC01",
   "name": "Cổng chuyển đổi USB C Ugreen 4 in 1 CM219 70336",
-  "image": "../access/category/accessories/ACC01.webp",
+  "image": ["../access/category/accessories/ACC01.webp"],
   "price": 300000,
   "description": ""
 
 }, {
   "id": "ACC02",
   "name": "Cổng chuyển đổi USB C Ugreen 5 in 1 CM478 15495",
-  "image": "../access/category/accessories/ACC02.webp",
+  "image": ["../access/category/accessories/ACC02.webp"],
   "price": 320000,
   "description": ""
 }
   , {
   "id": "ACC03",
   "name": "Cổng chuyển đổi USB C Ugreen 4 in 1 CM219 50985",
-  "image": "../access/category/accessories/ACC03.webp",
+  "image": ["../access/category/accessories/ACC03.webp"],
   "price": 300000,
   "description": ""
 }
   , {
   "id": "ACC04",
   "name": "Cổng chuyển đổi USB C Ugreen 5 in 1 CM511 15596",
-  "image": "../access/category/accessories/ACC04.webp",
+  "image": ["../access/category/accessories/ACC04.webp"],
   "price": 530000,
   "description": ""
 }
   , {
   "id": "ACC05",
   "name": "Công chuyển đổi Ugreen USB 2.0 to LAN RJ45 CR110 20254",
-  "image": "../access/category/accessories/ACC05.webp",
+  "image": ["../access/category/accessories/ACC05.webp"],
   "price": 190000,
   "description": ""
 }
   , {
   "id": "ACC06",
   "name": "Cổng chuyển đổi Ugreen USB 3.0 to LAN RJ145 CR111 20256",
-  "image": "../access/category/accessories/ACC06.webp",
+  "image": ["../access/category/accessories/ACC06.webp"],
   "price": 290000,
   "description": ""
 }
   , {
   "id": "ACC07",
   "name": "Cổng chuyển đổi USB C Ugreen 10 in 1 CM498 15601",
-  "image": "../access/category/accessories/ACC07.webp",
+  "image": ["../access/category/accessories/ACC07.webp"],
   "price": 1900000,
   "description": ""
 }
   , {
   "id": "ACC08",
   "name": "Cổng chuyển đổi USB C Ugreen 7 in 1 CM512 90568",
-  "image": "../access/category/accessories/ACC08.webp",
+  "image": ["../access/category/accessories/ACC08.webp"],
   "price": 890000,
   "description": ""
 }
   , {
   "id": "ACC09",
   "name": "Cổng chuyển đổi USB C Ugreen 5 in 1 CM136 50209",
-  "image": "../access/category/accessories/ACC09.webp",
+  "image": ["../access/category/accessories/ACC09.webp"],
   "price": 690000,
   "description": ""
 }
