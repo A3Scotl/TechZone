@@ -119,7 +119,6 @@ var products = [{
 ]
 // Load product list page
 document.addEventListener("DOMContentLoaded", function () {
-
   var listProductHTML = document.querySelector('.list-product');
   products.forEach((value, key) => {
     let newDiv = document.createElement('div');
@@ -129,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
       <h2>${value.name}</h2>
       <div class="price">${value.price.toLocaleString()}₫</div>
       <button class="detail" onclick="showDetail(${key})">Details</button>
-      <button class="addCart" onclick="addToCard(${key})">Add To Cart</button>`
-    listProductHTML.appendChild(newDiv);
+      <button class="addCart" onclick="addToCart(products[${key}])">Add To Cart</button>`
+      listProductHTML.appendChild(newDiv);
   });
 })
 //chuyển sang trang chi tiết sản phẩm

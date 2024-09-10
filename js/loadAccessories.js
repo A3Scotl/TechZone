@@ -71,11 +71,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let newDiv = document.createElement('div');
     newDiv.classList.add('item');
     newDiv.innerHTML =
-      `<img src="${value.image}" alt="" id="imgPD">
-      <h2>${value.name}</h2>
-      <div class="price">${value.price.toLocaleString()}₫</div>
+      `
+      <p class="d-none" id="idProduct">${value.id}</p>
+      <img src="${value.image}" alt="" id="imgProduct">
+      <h2 id="nameProduct">${value.name}</h2>
+      <div class="priceProduct">${value.price.toLocaleString()}₫</div>
       <button class="detail" onclick="showDetail(${key})">Details</button>
-      <button class="addCart" onclick="addToCard(${key})">Add To Cart</button>`
+      <button class="addCart" onclick="addToCart(products[${key}])">Add To Cart</button>`
     listProductHTML.appendChild(newDiv);
   });
 
