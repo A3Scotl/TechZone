@@ -81,6 +81,7 @@ function reloadCard() {
             `;
             ;
             listCartHTML.appendChild(newItem);
+            localStorage.setItem("totalAmount",JSON.stringify(totalPrice));
         }
     })
     let quantityCart = document.getElementById('quantityCart');
@@ -102,4 +103,12 @@ function changeQuantity(key, quantity) {
     localStorage.setItem('myCart', JSON.stringify(cart));
     reloadCard();
 }
-
+function checkOut(){
+    if(cart.every(item => item === null)){
+        alert("No products");
+    }
+    else{
+    window.location.href = "../html/cart.html";
+    }
+    
+}
