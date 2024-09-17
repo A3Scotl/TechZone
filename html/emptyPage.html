@@ -1,236 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <script src="../js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-            <script src="../js/app.js"></script>
 
-        <title>Components</title>
-    </head>
-    <body>
-        <div class="header navbar navbar-expand-sm navbar-light bg-light">
-            <a class="navbar-brand mb-0 h1 d-flex align-items-center" href="#">
-                <img src="../access/logo/logoPage.jpg" alt="logo"
-                    class="d-inline-block align-top" height="50" width="50">
-                TechZone</a>
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../js/app.js"></script>
+
+    <title>Components</title>
+</head>
+
+<body>
+    <div class="header navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1 d-flex align-items-center" href="#">
+            <img src="../access/logo/logoPage.jpg" alt="logo" class="d-inline-block align-top" height="50" width="50"> TechZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="menu collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="../index.html" class="nav-link">
+        <div class="menu collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="../index.html" class="nav-link">
                             Home
                         </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" Features>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" Features>
                             Category
                         </a>
-                        <ul class="dropdown-menu"
-                            aria-labelledby="navbarDropdown">
-                            <li><a href="../html/computers.html"
-                                    class="dropdown-item">Computers</a></li>
-                            <li><a href="../html/emptyPage.html"
-                                    class="dropdown-item">Components</a></li>
-                            <li><a href="../html/emptyPage.html"
-                                    class="dropdown-item">Peripherals</a></li>
-                            <li><a href="../html/accessories.html"
-                                    class="dropdown-item">Accessories</a></li>
-                            <li><a href="../html/emptyPage.html"
-                                    class="dropdown-item">Others</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="./news.html" class="nav-link ">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="../html/computers.html" class="dropdown-item">Computers</a></li>
+                        <li><a href="../html/emptyPage.html" class="dropdown-item">Components</a></li>
+                        <li><a href="../html/emptyPage.html" class="dropdown-item">Peripherals</a></li>
+                        <li><a href="../html/accessories.html" class="dropdown-item">Accessories</a></li>
+                        <li><a href="../html/emptyPage.html" class="dropdown-item">Others</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a href="./news.html" class="nav-link ">
                             News
                         </a>
-                    </li>
-                </ul>
+                </li>
+                <li class="nav-item active">
+                    <a href="../html/aboutUs.html" class="nav-link ">
+                                    About us
+                                </a>
+                </li>
+            </ul>
 
-                <div  class="input-group search-bar "style="width: 50%;">
-                    <input type="text" class="form-control"
-                        placeholder="Search">
-                    <button class="btn bg-primary" type="button">
+            <div class="input-group search-bar " style="width: 50%;">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn bg-primary" type="button">
                         <i class="bi bi-search-heart" style="color: white;"></i>
                     </button>
-                </div>
-                <div class="d-flex align-items-center">
-                    <ul class="navbar-nav gap-3">
-                        <li class="nav-item active align-items-center d-flex">
-                            <a href="#" class="nav-link text-center">
-                                <i class="bi bi-headset"></i>
-                                Hotline <br>
-                                1900000
-                            </a>
-                        </li>
-                        <li class="nav-item active align-items-center d-flex">
-                            <a href="./sitemap.html" class="nav-link text-center">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                Show room<br>
-                                Location
-                            </a>
-                        </li>
+            </div>
+            <div class="d-flex align-items-center">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item active align-items-center d-flex">
+                        <a href="#" class="nav-link text-center">
+                            <i class="bi bi-headset"></i> Hotline <br> 1900000
+                        </a>
+                    </li>
+                    <li class="nav-item active align-items-center d-flex">
+                        <a href="./sitemap.html" class="nav-link text-center">
+                            <i class="bi bi-geo-alt-fill"></i> Show room<br> Location
+                        </a>
+                    </li>
 
-                        <li class="nav-item active ">
-                            <a href="./login.html"
-                                class="username-display nav-link text-center ">
-                                <i class="bi bi-person-fill"></i>
-                                <br>
-                                <p id>Login</p>
-                            </a>
-                        </li>
+                    <li class="nav-item active ">
+                        <a href="./login.html" class="username-display nav-link text-center ">
+                            <i class="bi bi-person-fill"></i>
+                            <br>
+                            <p id>Login</p>
+                        </a>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <div id="carouselExampleControls" class="carousel slide overflow-hidden" data-bs-ride="carousel" style="height: 50vh;">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../access/banner/banner_collections_gaming_msi.webp" class="d-block w-100" alt="...">
-                  </div>
-              <div class="carousel-item ">
-                <img src="../access/banner/banner_web_collection_1920x420_laptop_van_phong.webp" class="d-block w-100" alt="...">
-              </div>
-              
-              <div class="carousel-item">
-                <img src="../access/banner/banner_collection_laptop_asus_vivobook.webp" class="d-block w-100" alt="...">
-              </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide overflow-hidden" data-bs-ride="carousel" style="height: 50vh;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../access/banner/banner_collections_gaming_msi.webp" class="d-block w-100" alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <div class="carousel-item ">
+                <img src="../access/banner/banner_web_collection_1920x420_laptop_van_phong.webp" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../access/banner/banner_collection_laptop_asus_vivobook.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        
-        <div class="container d-flex p-3 g-3">
-            <select name="" id="" class="form-select" >
+    </div>
+
+    <div class="container d-flex p-3 g-3">
+        <select name="" id="" class="form-select">
                 
                 <option value=""></i>Filter</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">Product status</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">Firm</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">CPU</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">Screen size</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">Usage needs</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">RAM</option>
             </select>
-            <select name="" id="" class="form-select">
+        <select name="" id="" class="form-select">
                 <option value="">SORT:
                     Outstanding</option>
             </select>
-    
-    
+
+
+    </div>
+    <div class="container p-3">
+
+        <div class="list-product">
         </div>
-        <div class="container p-3">
-    
-            <div class="list-product">
+    </div>
+    <div class="container text-center">
+        <h4>No products</h4>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center gap-3 p-4" style="cursor: pointer;">
+        <span><<</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>>></span>
+    </div>
+    <div class="footer">
+        <div class="logo_end"><img src="../access/logo/logoPage.jpg" alt width="50px"></div>
+        <div class="subscribe">
+            <div class="search">
+                <input type="text" placeholder="Input yor email">
+                <i class="fa-regular fa-envelope text-black-50"></i>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Send">
+        </div>
+        <div class="footer-list">
+            <div class="footer-list_link">
+                <p><b>Category</b></p>
+                <ul>
+                    <li>Computers</li>
+                    <li>Accessories</li>
+                    <li>Peripherals</li>
+                    <li>Components</li>
+                    <li>Others</li>
+                </ul>
+            </div>
+            <div class="footer-list_link">
+                <p><b>Policy</b></p>
+                <ul>
+                    <li>Warranty policy</li>
+                    <li>Payment policy</li>
+                    <li>Delivery policy</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+            <div class="footer-list_link">
+                <p><b>Conpany</b></p>
+                <ul>
+                    <li>About us </li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-list_link">
+                <p><b>News</b></p>
+                <ul>
+                    <li>Personal</li>
+                    <li>Start up</li>
+                    <li>Organization</li>
+                </ul>
             </div>
         </div>
-        <div class="container text-center">
-            <h4>No products</h4>
-        </div>
-        <div class="container d-flex align-items-center justify-content-center gap-3 p-4" style="cursor: pointer;">
-            <span><<</span>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>>></span>
-        </div>
-        <div class="footer">
-            <div class="logo_end"><img src="../access/logo/logoPage.jpg" alt width="50px"></div>
-            <div class="subscribe">
-                <div class="search">
-                    <input type="text" placeholder="Input yor email">
-                    <i class="fa-regular fa-envelope text-black-50"></i>
-                </div>
-                <input type="submit" class="btn btn-primary" value="Send">
-            </div>
-            <div class="footer-list">
-                <div class="footer-list_link">
-                    <p><b>Category</b></p>
-                    <ul>
-                        <li>Computers</li>
-                        <li>Accessories</li>
-                        <li>Peripherals</li>
-                        <li>Components</li>
-                        <li>Others</li>
-                    </ul>
-                </div>
-                <div class="footer-list_link">
-                    <p><b>Policy</b></p>
-                    <ul>
-                        <li>Warranty policy</li>
-                        <li>Payment policy</li>
-                        <li>Delivery policy</li>
-                        <li>Privacy policy</li>
-                    </ul>
-                </div>
-                <div class="footer-list_link">
-                    <p><b>Conpany</b></p>
-                    <ul>
-                        <li>About us </li>
-                        <li>Contact us</li>
-                    </ul>
-                </div>
-                <div class="footer-list_link">
-                    <p><b>News</b></p>
-                    <ul>
-                        <li>Personal</li>
-                        <li>Start up</li>
-                        <li>Organization</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-end">
-                <select name id value="1">
+        <div class="footer-end">
+            <select name id value="1">
                     <option value="1">English</option>
                     <option value="2">Vietnamese</option>
                 </select>
-                <div class="end_center text-center">
-                    <p>@ 2024 TechZone,Inc • Privacy • Terms • Sitemap</p>
-                </div>
-                <div class="icon_link">
-                    <a href="#" style="color: rgb(85, 192, 245)"> <i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" style="color: blue"> <i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" style="color: rgb(83, 83, 187)"> <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" style="color: red"><i class="fa-brands fa-youtube"></i></a>
-                </div>
+            <div class="end_center text-center">
+                <p>@ 2024 TechZone,Inc • Privacy • Terms • Sitemap</p>
+            </div>
+            <div class="icon_link">
+                <a href="#" style="color: rgb(85, 192, 245)"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="color: blue"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="color: rgb(83, 83, 187)"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" style="color: red"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -9,8 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Cart</title>
@@ -24,10 +23,9 @@
 <body>
     <div class="header navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand mb-0 h1 d-flex align-items-center" href="#">
-            <img src="../access/logo/logoPage.jpg" alt="logo" class="d-inline-block align-top" height="50" width="50">
-            TechZone</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../access/logo/logoPage.jpg" alt="logo" class="d-inline-block align-top" height="50" width="50"> TechZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="menu collapse navbar-collapse" id="navbarNav">
@@ -38,8 +36,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" Features>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" Features>
                         Category
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,6 +52,11 @@
                         News
                     </a>
                 </li>
+                <li class="nav-item active">
+                    <a href="../html/aboutUs.html" class="nav-link ">
+                            About us
+                        </a>
+                </li>
             </ul>
 
             <div class="input-group search-bar " style="width: 50%;">
@@ -67,16 +69,12 @@
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item active align-items-center d-flex">
                         <a href="#" class="nav-link text-center">
-                            <i class="bi bi-headset"></i>
-                            Hotline <br>
-                            1900000
+                            <i class="bi bi-headset"></i> Hotline <br> 1900000
                         </a>
                     </li>
                     <li class="nav-item active align-items-center d-flex">
                         <a href="#" class="nav-link text-center">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            Show room<br>
-                            Location
+                            <i class="bi bi-geo-alt-fill"></i> Show room<br> Location
                         </a>
                     </li>
                     <li class="nav-item active ">
@@ -91,12 +89,10 @@
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center justify-content-center flex-column p-5"
-        style="width: 100%;background-color: lightgrey">
+    <div class="d-flex align-items-center justify-content-center flex-column p-5" style="width: 100%;background-color: lightgrey">
         <div class="cart bg-white container p-2 " style="width: 700px; border-radius: 10px;">
             <h2 class="w-100 text-center border-bottom p-1">Cart</h2>
-            <div id="cartProducts"
-                class="d-flex justify-content-between align-items-center flex-column overflow-hidden">
+            <div id="cartProducts" class="d-flex justify-content-between align-items-center flex-column overflow-hidden">
 
             </div>
             <hr>
@@ -178,7 +174,7 @@
     var totalAmount = document.getElementById("totalAmount");
     var storedTotalAmount = parseFloat(localStorage.getItem("totalAmount"));
     totalAmount.innerHTML = storedTotalAmount.toLocaleString() + '₫';
-    window.onload = function () {
+    window.onload = function() {
         cart = JSON.parse(localStorage.getItem("myCart"));
         cart.forEach((value, key) => {
             if (value != null) {
@@ -197,12 +193,12 @@
                         <h6 id="total" class="text-primary">${value.price.toLocaleString()}₫</h6>
                         <button class="border p-1 btn btn-danger" onclick="remove()"> remove </button>
                 </div>        
-            `
-                    ;
+            `;
                 document.querySelector("#cartProducts").appendChild(newItem);
             }
         })
     }
+
     function remove() {
         var cart = JSON.parse(localStorage.getItem("myCart"));
         var item = event.target.parentNode.parentNode;
@@ -210,7 +206,7 @@
         var originalPrice = parseFloat(item.querySelector("#oPrice").textContent);
         var quantity = parseInt(item.querySelector("#quantity").textContent);
         var itemName = item.querySelector("h6.text-center").textContent;
-        var index = cart.findIndex(function (value) {
+        var index = cart.findIndex(function(value) {
             return value.name === itemName;
 
         });
@@ -232,16 +228,14 @@
         item.remove();
     }
 
-    function orderNow(){
+    function orderNow() {
         var cart = JSON.parse(localStorage.getItem("myCart"));
-        if(cart!=undefined){
+        if (cart != undefined) {
             window.location.href = "./checkout.html";
-        }
-        else{
+        } else {
             alert("Cart is empty");
         }
     }
-
 </script>
 
 </html>
