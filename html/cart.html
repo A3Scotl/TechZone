@@ -187,7 +187,7 @@
                             <p id="productId" class="d-none">${value.id}</p>
                             <p id="oPrice" class="d-none">${value.originalPrice}</p>
                             <img class="border p-1" src="${value.image[0]}" alt="" style="height: 150px; ">
-                            <h6 class="text-center" style="width:200px">${value.name}</h6>
+                            <h6 class="text-center" id="product-name" style="width:200px">${value.name}</h6>
                         </div>
                         <h6 id="quantity" class="border p-1">${value.quantity}</h6>
                         <h6 id="total" class="text-primary">${value.price.toLocaleString()}₫</h6>
@@ -205,11 +205,8 @@
         var productId = item.querySelector("#productId").textContent;
         var originalPrice = parseFloat(item.querySelector("#oPrice").textContent);
         var quantity = parseInt(item.querySelector("#quantity").textContent);
-        var itemName = item.querySelector("h6.text-center").textContent;
-        var index = cart.findIndex(function(value) {
-            return value.name === itemName;
-
-        });
+        var itemName = item.querySelector("#product-name").textContent;
+        const index = cart.findIndex(item => item && item.name === itemName);
         // Remove the product from the cart
         if (index !== -1) {
             cart.splice(index, 1);
