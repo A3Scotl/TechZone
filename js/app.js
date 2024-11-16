@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var search_bar = document.querySelector(".search-bar");
 
     if (currentUser) {
-        usernameDisplay.innerHTML = `<p>Hello, ${currentUser}</p> <span class="logout">Logout</span>`;
-        search_bar.style.width = "40%";
+        usernameDisplay.innerHTML = `<p><b>Hello, ${currentUser}</b></p> <span class="logout">Logout</span>`;
+        search_bar.style.width = "35%";
         const logoutSpan = usernameDisplay.nextElementSibling;
     }
 
